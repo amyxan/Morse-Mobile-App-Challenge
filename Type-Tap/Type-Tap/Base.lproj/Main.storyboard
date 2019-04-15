@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Type_Tap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-5X-hPo">
+                                <rect key="frame" x="0.0" y="40" width="375" height="165.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type-to-Tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMt-gE-LYL">
+                                        <rect key="frame" x="8" y="8" width="359" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type into the box below, then click 'Submit' to see your words in Morse." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lr-HZ-5Ys">
+                                        <rect key="frame" x="8" y="40" width="359" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter text." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cVU-B8-hbB">
+                                        <rect key="frame" x="8" y="81.5" width="359" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuw-WH-cuj">
+                                        <rect key="frame" x="8" y="119.5" width="49" height="30"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="morseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmI-BG-8Qy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NF-tx-36x">
+                                        <rect key="frame" x="8" y="157.5" width="359" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="cVU-B8-hbB" secondAttribute="trailing" id="E5j-AV-Hb5"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="0Lr-HZ-5Ys" secondAttribute="trailing" id="Ob0-F6-mft"/>
+                                    <constraint firstItem="TMt-gE-LYL" firstAttribute="top" secondItem="Ydt-5X-hPo" secondAttribute="topMargin" constant="8" id="WTq-Bo-AXY"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="TMt-gE-LYL" secondAttribute="trailing" id="aIS-Hs-seu"/>
+                                    <constraint firstItem="cVU-B8-hbB" firstAttribute="leading" secondItem="Ydt-5X-hPo" secondAttribute="leadingMargin" id="dtR-NU-bsJ"/>
+                                    <constraint firstItem="0Lr-HZ-5Ys" firstAttribute="leading" secondItem="Ydt-5X-hPo" secondAttribute="leadingMargin" id="lyE-9u-cNL"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="7NF-tx-36x" secondAttribute="trailing" id="nKb-Mc-hod"/>
+                                    <constraint firstItem="7NF-tx-36x" firstAttribute="leading" secondItem="Ydt-5X-hPo" secondAttribute="leadingMargin" id="sj6-uH-1hE"/>
+                                    <constraint firstItem="TMt-gE-LYL" firstAttribute="leading" secondItem="Ydt-5X-hPo" secondAttribute="leadingMargin" id="sns-1C-lvp"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ydt-5X-hPo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IPK-8f-JVG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ydt-5X-hPo" secondAttribute="trailing" id="Qgq-ha-I62"/>
+                            <constraint firstItem="Ydt-5X-hPo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="jga-W2-ze3"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="inputTextField" destination="cVU-B8-hbB" id="ZfD-Ew-eAT"/>
+                        <outlet property="morseLabel" destination="7NF-tx-36x" id="P3I-cl-SxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
